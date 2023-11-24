@@ -1,258 +1,722 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">
-  /*
-   *  * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
-   *   *
-   *    * CSS for making a resume with pandoc. Inspired by moderncv.
-   *     *
-   *      * This CSS document is delivered to you under the CC BY-SA 3.0 License.
-   *       * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-   *        */
-  
-  /* Whole document */
-  body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      width: 800px;
-      margin: auto;
-      background: #FFFFFF;
-      padding: 10px 10px 10px 10px;
-  }
-  
-  /* Title of the resume */
-  h1 {
-      font-size: 55px;
-      color: #3d3c3c;
-      text-align:center;
-      margin-bottom:15px;
-  }
-  
-  /* Titles of categories */
-  h2 {
-    margin-top:50px;
-      color: #397249;
-  }
-  /* There is a bar just before each category */
-  /* h2:before {
-      content: "";
-      display: inline-block;
-      margin-right:1%;
-      width: 20%;
-      height: 10px;
-      background-color: #9CB770;
-  } */
-  
-  line {
-      content: "";
-      display: inline-block;
-      margin-right:1%;
-      width: 100%;
-      height: 4px;
-      background-color: #9CB770;
-  }
-
-  /* Definitions */
-  dt {
-      float: left;
-      clear: left;
-      width: 23%;
-      font-weight: bold;
-      margin-bottom:20px
-  }
-  
-  dd {
-      margin-left: 24%;
-      margin-bottom:20px
-  }
-  #dt02 {
-      float: left;
-      clear: left;
-      width: 15%;
-      font-weight: bold;
-      margin-bottom:5px
-  }
-  #dd02 {
-      margin-left: 15%;
-      font-weight: bold;
-      margin-bottom:5px
-  }
-
-  #dt03 {
-      float: left;
-      clear: left;
-      width: 3.5%;
-      font-weight: normal;
-      margin-bottom:5px
-  }
-  #dd03 {
-      margin-left: 3.5%;
-      /* font-weight: bold; */
-      margin-bottom:5px
-  }
-
-  p {
-      margin-top:0;
-      margin-bottom:3px;
-  }
-
-  /* p {
-      margin-top:0;
-      margin-bottom:5px;
-  } */
-  
-  /* Blockquotes */
-  blockquote {
-      text-align: center
-  }
-  
-  /* Links */
-  a {
-      text-decoration: none;
-  }
-  
-  /* Horizontal separators */
-  hr {
-      color: #A6A6A6;
-  }
-  
-  table {
-      width: 100%;
-      border-top: solid;
-      border-bottom: solid;
-      border-color:#999999;
-  }
-  </style>
-</head>
-<body>
-<h1 id="johnny-coder">Zhaoyang Lyu</h1>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left">Place and Date of Birth:</td>
-<td align="right">Henan, China | 18 April 1997</td>
-</tr>
-<tr class="even">
-<td align="left">Address:</td>
-<td align="right">The Chinese University of Hong Kong, Shatin, NT, Hong Kong</td>
-</tr>
-<tr class="odd">
-<td align="left">Email:</td>
-<td align="right"><a href = "mailto:lyuzhaoyang@link.cuhk.edu.hk">lyuzhaoyang@link.cuhk.edu.hk</a></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 id="education">Education</h2>
-<line></line>
-
-<dl>
-<dt>Aug. 2018 - Now</dt>
-<dd><p>PhD in Information Engineering at <strong>The Chinese University of Hong Kong</strong></p>
-<p>LAB: <a href = "http://mmlab.ie.cuhk.edu.hk/index.html">Multimedia Laboratory</a> &nbsp &nbsp &nbsp &nbsp &nbsp
-    Supervisor: <a href = "http://dahua.me/">Dahua Lin</a></p>
-</dd>
-
-<dt>Aug. 2016 - May 2017</dt>
-<dd><p>Exchange Semesters at <strong>University of California, Berkeley</strong></p>
-<p>GPA: 4/4</p>
-</dd>
-
-<dt>Sept. 2014 - June 2018</dt>
-<dd><p>Undergraduate Degree in Physics, <strong>Xi'an Jiaotong University</strong></p>
-<p>GPA: 3.96/4.3</p>
-<p>Academic Ranking: No. 1 out of 42 students</p>
-</dd>
-
-<dt>Sept. 2012 - Sept. 2014</dt>
-<dd><p>Juvenile Class Program, <strong>Xi'an Jiaotong University</strong></p>
-<p>GPA: 3.96/4.3</p>
-</dd>
-
-</dl>
-
-<h2 id="Research Experience">Research Experience</h2>
-<line></line>
-
-<dl>
-<dt>Aug. 2018 - Now</dt>
-<dd>PhD at Department of Information Engineering, <br>
-    <p>The Chinese University of Hong Kong, China </p>
-<em>Certify Robustness of Neural Networks</em> <br>  
-<em>Protect Intellectual Property of Deep Neural Networks</em>
-</dd>
-
-<dt>July 2017 - June 2018</dt>
-<dd><p>Internship at School of Science, Xi'an Jiaotong University, China </p>
-<em>Apply Machine Learning Methods to Condensed Matter Physics</em> <br>  
-</dd>
-
-<dt>Oct. 2016 - July 2017</dt>
-<dd><p>Internship at Lawrence Berkeley National Laboratory, Berkeley, US</p>
-<em>Solve Schrodinger Equation of Spin-Polarized Multi-Electron System</em> <br>  
-</dd>
-
-<dt>Mar. 2016 - June 2016</dt>
-<dd>Internship at the School of Electronic and Information Engineering, <br>
-    <p>Xi'an Jiaotong University, China</p>
-<em>Predict Purchasing Behavior Using Machine Learning Techniques</em> <br>  
-</dd>
-
-</dl>
-
-
-<h2 id="Scholarships and Certificates">Scholarships and Certificates</h2>
-<line></line>
-<dl>
-<dt id = "dt02"> Aug. 2018  <dd id = "dd02">Hong Kong PhD Fellowship</dd>
-<dt id = "dt02"> Mar. 2017</dt>  <dd id = "dd02">Second Class "Zhufeng" Scholarship</dd>
-<dt id = "dt02"> Sept. 2017</dt>  <dd id = "dd02">"Pengkang" Scholarship</dd>
-<dt id = "dt02"> Nov. 2016</dt>  <dd id = "dd02">National Scholarship</dd>
-<dt id = "dt02"> Mar. 2016 </dt>  <dd id = "dd02">First Class "Zhufeng" Scholarship</dd>
-<dt id = "dt02"> Nov. 2015 </dt>  <dd id = "dd02">National Scholarship</dd>
-<dt id = "dt02"> June 2015 </dt>  <dd id = "dd02">First Prize of China Undergraduate Physics Tournament</dd>
-</dl>
-   
-
-
-<h2 id="Volunteer Work">Volunteer Work</h2>
-<line></line>
-<dl>
-<p><strong>Volunteer as a Guide at the West Move Historical Museum of Xi'an Jiaotong University</strong></p>
-<p>This museum was built to commemorate the history when Jiaotong University was moved west from Shanghai to Xi’an. 
-    I guided tourists around the museum and introduced the history of Jiaotong University, especially the part 
-    when Jiaotong University was moved west from Shanghai to Xi'an. 
-    I worked at the museum 4 hours per week. I met a lot of friends there and I really enjoyed the time spent there.</p>
-</dl>
-
-
-
-<h2 id="Publication">Publication</h2>
-<line></line>
-<dl>
-<dt id = "dt03">[1]</dt> 
-<dd id = "dd03">Ching-Yun Ko*, Zhaoyang Lyu*, Tsui-Wei Weng, Luca Daniel, Ngai Wong and Dahua Lin,
-    "POPQORN: Quantifying Robustness of Recurrent Neural Networks", ICML 2019 <br>* Equal contribution</dd>
-</dl>
-
-<dl>
-<dt id = "dt03">[2]</dt> 
-<dd id = "dd03">Zhaoyang Lyu*, Ching-Yun Ko*, Zhifeng Kong, Ngai Wong, Dahua Lin and Luca Daniel,
-    "Fastened CROWN: Tightened Neural Network Robustness Certificates", AAAI 2020 <br>* Equal contribution</dd>
-</dl>
-  
-<dl>
-<dt id = "dt03">[3]</dt> 
-<dd id = "dd03">Zhaoyang Lyu, Minghao Guo, Tong Wu, Guodong Xu, Kehuan Zhang and Dahua Lin,
-    "Towards Evaluating and Training Verifiably Robust Neural Networks", CVPR 2021 (Oral)</dd>
-</dl>
-
-
-</body>
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <!-- begin SEO -->
+        <title>About me - Tai Wang</title>
+        <meta property="og:locale" content="en-US">
+        <meta property="og:site_name" content="Tai Wang">
+        <meta property="og:title" content="About me">
+        <link rel="canonical" href="https://tai-wang.github.io/">
+        <meta property="og:url" content="https://tai-wang.github.io/">
+        <meta property="og:description" content="About me">
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Tai Wang",
+                "url": "https://tai-wang.github.io",
+                "sameAs": null
+            }</script>
+        <!-- end SEO -->
+        <link href="https://tai-wang.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Tai Wang Feed">
+        <!-- http://t.co/dKP3o1e -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+        </script>
+        <!-- For all browsers -->
+        <link rel="stylesheet" href="https://tai-wang.github.io/assets/css/main.css">
+        <meta http-equiv="cleartype" content="on">
+        <!-- start custom head snippets -->
+        <link rel="apple-touch-icon" sizes="57x57" href="https://tai-wang.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://tai-wang.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://tai-wang.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://tai-wang.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://tai-wang.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://tai-wang.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://tai-wang.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://tai-wang.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://tai-wang.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+        <link rel="icon" type="image/png" href="https://tai-wang.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://tai-wang.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+        <link rel="icon" type="image/png" href="https://tai-wang.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+        <link rel="icon" type="image/png" href="https://tai-wang.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+        <link rel="manifest" href="https://tai-wang.github.io/images/manifest.json?v=M44lzPylqQ">
+        <link rel="mask-icon" href="https://tai-wang.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+        <link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="https://tai-wang.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+        <meta name="msapplication-config" content="https://tai-wang.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://tai-wang.github.io/assets/css/academicons.css"/>
+        <script type="text/x-mathjax-config">
+             MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); 
+        </script>
+        <script type="text/x-mathjax-config">
+             MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); 
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        <!-- end custom head snippets -->
+    </head>
+    <body>
+        <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+        <div class="masthead">
+            <div class="masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="site-nav" class="greedy-nav">
+                        <button>
+                            <div class="navicon"></div>
+                        </button>
+                        <ul class="visible-links">
+                            <li class="masthead__menu-item masthead__menu-item--lg">
+                                <a href="https://tai-wang.github.io/">Tai Wang</a>
+                            </li>
+                        </ul>
+                        <ul class="hidden-links hidden"></ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="main" role="main">
+            <div class="sidebar sticky">
+                <div itemscope itemtype="http://schema.org/Person">
+                    <div class="author__avatar">
+                        <img src="https://tai-wang.github.io/images/Vienna.jpg" class="author__avatar" alt="Tai Wang 王泰">
+                    </div>
+                    <div class="author__content">
+                        <h3 class="author__name">Tai Wang 王泰</h3>
+                        <p class="author__bio">PhD student @ MMLab, CUHK</p>
+                    </div>
+                    <div class="author__urls-wrapper">
+                        <button class="btn btn--inverse">Follow</button>
+                        <ul class="author__urls social-icons">
+                            <li>
+                                <i class="fa fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+                                HKSAR
+                            </li>
+                            <li>
+                                <a href="mailto:taiwang.me@gmail.com">
+                                    <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+                                    Email
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/wangtai97">
+                                    <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/泰-王-2b2738147">
+                                    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Tai-Wang">
+                                    <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+                                    Github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://scholar.google.com/citations?user=JmbbZWIAAAAJ&hl=zh-CN#">
+                                    <i class="fas fa-fw fa-graduation-cap"></i>
+                                    Google Scholar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+                <meta itemprop="headline" content="About me">
+                <meta itemprop="description" content="About me">
+                <div class="page__inner-wrap">
+                    <header>
+                        <h1 class="page__title" itemprop="headline">About me</h1>
+                    </header>
+                    <section class="page__content" itemprop="text">
+                        <p>
+                            I am a Ph.D. student of <a href="http://mmlab.ie.cuhk.edu.hk/">MMLab</a>
+                            (Multimedia Laboratory), <a href="https://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>
+                            , supervised by <a href="http://dahua.site/">Dahua Lin</a>
+                            . Previously I spent four wonderful years and obtained my Bachelor’s Degree at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>
+                            . I am excited about all the vision or AI technologies that can change people’s lifestyles, for example, building intelligent agents that can interact with us. My current research is mainly focused on general 3D perception, including different modalities, tasks and scenarios. I am also interested in other extensive 3D vision research and their robotic applications.
+                        </p>
+                        <h2 id="news">News</h2>
+                        <ul>
+                            <li>
+                                [2022/07] <a href="https://arxiv.org/abs/2207.12988">DfM</a>
+                                , our recent study on 3D perception from monocular videos, is accepted by <a href="https://eccv2022.ecva.net/">ECCV 2022</a>
+                                .
+                            </li>
+                            <li>
+                                [2022/06] A simple multi-view baseline, <a href="https://arxiv.org/abs/2207.12716">MV-FCOS3D++</a>
+                                , obtained the runner-up in the <a href="https://cvpr2022.wad.vision/">Waymo Camera-Only 3D Detection Challenge</a>
+                                with few bells-and-whistles. Code is available <a href="https://github.com/Tai-Wang/Depth-from-Motion">here</a>
+                                .
+                            </li>
+                            <li>
+                                [2021/10] <a href="https://arxiv.org/abs/2104.10956">FCOS3D</a>
+                                got the best paper award on the <a href="https://sites.google.com/unitn.it/3dodi/home">ICCV 3DODI workshop</a>
+                                ! Thanks for the recognition!
+                            </li>
+                            <li>
+                                [2021/09] One paper is accepted by <a href="https://nips.cc/">NeurIPS 2021</a>
+                                .
+                            </li>
+                            <li>
+                                [2021/09] <a href="https://arxiv.org/abs/2107.14160">PGD</a>
+                                , our follow-up work of FCOS3D, is accepted by <a href="https://www.robot-learning.org/">CoRL 2021</a>
+                                .
+                            </li>
+                            <li>
+                                [2021/02] Our further research on voxel representation learning, <a href="https://arxiv.org/abs/2011.10033">Cylinder3D</a>
+                                , is accepted by <a href="https://cvpr2021.thecvf.com/">CVPR 2021</a>
+                                . We also obtained the runner-up in the <a href="https://www.nuscenes.org/lidar-segmentation?externalData=all&amp;mapData=all&amp;modalities=Any">nuScenes LiDAR Segmentation Challenge</a>
+                                .
+                            </li>
+                            <li>
+                                [2020/12] MMDet3D Team wins the Best PKL Award and best vision-only results in the 3rd <a href="https://www.nuscenes.org/object-detection?externalData=all&amp;mapData=all&amp;modalities=Any">nuScenes detection challenge</a>
+                                of 5th AI Driving Olympics, <a href="https://nips.cc/">NeurIPS 2020</a>
+                                .
+                            </li>
+                            <li>
+                                [2020/11] We release the full technical report for our previously developed LiDAR annotation tool, <a href="https://arxiv.org/abs/2011.10174">FLAVA</a>
+                                .
+                            </li>
+                            <li>
+                                [2020/10] <a href="https://arxiv.org/abs/2004.02724">Reconfigurable Voxels</a>
+                                is accepted to <a href="https://sites.google.com/robot-learning.org/corl2020">CoRL 2020</a>
+                                .
+                            </li>
+                            <li>
+                                [2020/07] <a href="https://github.com/open-mmlab/mmdetection3d">MMDetection3D</a>
+                                is finally released! Fork this versatile codebase and have a try, pushing forward this field to general 3D detection together.
+                            </li>
+                        </ul>
+                        <h2 id="education">Education</h2>
+                        <dl>
+                            <dt>
+                                <img src="../images/cuhk.png" width="90" height="90" alt="cuhk" align="left"/>
+                            </dt>
+                            <dt>The Chinese University of Hong Kong (CUHK)</dt>
+                            <dd>August 2019 - July 2023 (Expected)</dd>
+                            <dd>Ph.D. in Information Engineering</dd>
+                            <dt>
+                                <img src="../images/zju.png" width="90" height="90" alt="zju" align="left"/>
+                            </dt>
+                            <dt>Zhejiang University (ZJU)</dt>
+                            <dd>August 2015 - July 2019</dd>
+                            <dd>Major: B.E. in Information Engineering</dd>
+                            <dd>Minor: Advanced Honor Class of Engineering Education (ACEE), Chu Kochen Honors College</dd>
+                        </dl>
+                        <h2 id="publications">Publications</h2>
+                        <dl>
+                            <dt>
+                                <strong>Vision-Based 3D Perception</strong>
+                                <br/>
+                            </dt>
+                            <dt>
+                                <img src="../images/DORT.png" width="180" height="110" alt="dort" align="left"/>
+                            </dt>
+                            <dt>
+                                DORT: Modeling Dynamic Objects in Recurrent for Multi-Camera <br/>3D Object Detection and Tracking
+                            </dt>
+                            <dd>
+                                Qing Lian, <strong>Tai Wang</strong>
+                                , Jiangmiao Pang, Dahua Lin
+                            </dd>
+                            <dd>
+                                Conference on Robot Learning (<strong>CoRL</strong>
+                                ) 2023
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2303.16628">[Paper]</a>
+                                <a href="https://github.com/SmartBot-PJLab/DORT">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1S4dzWZJH5jvsPiSGqZfXdy9bm12-AW4j/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/bev-survey.png" width="180" height="110" alt="bev-survey" align="left"/>
+                            </dt>
+                            <dt>Vision-Centric BEV Perception: A Survey</dt>
+                            <dd>
+                                Yuexin Ma*, <strong>Tai Wang*</strong>
+                                , Xuyang Bai*, Huitong Yang, Yuenan Hou, Yaming Wang, <br/>Yu Qiao, Ruigang Yang, Dinesh Manocha, Xinge Zhu
+                            </dd>
+                            <dd>Arxiv preprint</dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2208.02797">[Paper]</a>
+                                <a href="https://github.com/4DVLab/Vision-Centric-BEV-Perception">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1sg57-QxoBh5cGgzRbhukiJzCGcV7wIPp/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/occupancy.png" width="180" height="110" alt="occupancy" align="left"/>
+                            </dt>
+                            <dt>Scene as Occupancy</dt>
+                            <dd>
+                                Chonghao Sima*, Wenwen Tong*, <strong>Tai Wang</strong>
+                                , Li Chen, Silei Wu, Hanming Deng, Yi Gu, Lewei Lu, <br/>Ping Luo, Dahua Lin, Hongyang Li
+                            </dd>
+                            <dd>End-to-End Autonomous Driving, CVPR 2023 Workshop and Challenge</dd>
+                            <dd>
+                                IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>
+                                ) 2023
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2306.02851">[Paper]</a>
+                                <a href="https://github.com/OpenDriveLab/OccNet">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1wxmnCXPBEb6Fc8gjyHtFZxXPZINtaLR_/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/geomim.png" width="180" height="110" alt="geomim" align="left"/>
+                            </dt>
+                            <dt>
+                                GeoMIM: Towards Better 3D Knowledge Transfer via Masked Image Modeling <br/>for Multi-view 3D Understanding
+                            </dt>
+                            <dd>
+                                Jihao Liu, <strong>Tai Wang</strong>
+                                , Boxiao Liu, Qihang Zhang, Yu Liu, Hongsheng Li
+                            </dd>
+                            <dd>
+                                IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>
+                                ) 2023
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2303.11325">[Paper]</a>
+                                [Code](Comming Soon) <a href="https://drive.google.com/file/d/1eNeQuemmt4JWEJhVqMMezorQPqekJDYQ/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/monodetr.png" width="180" height="110" alt="monodetr" align="left"/>
+                            </dt>
+                            <dt>MonoDETR: Depth-guided Transformer for Monocular 3D Object Detection</dt>
+                            <dd>
+                                Renrui Zhang, Han Qiu, <strong>Tai Wang</strong>
+                                , Ziyu Guo, Ziteng Cui, Peng Gao, Yu Qiao, Hongsheng Li
+                            </dd>
+                            <dd>
+                                IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>
+                                ) 2023
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2203.13310">[Paper]</a>
+                                <a href="https://github.com/ZrrSkywalker/MonoDETR">[Code]</a>
+                                <a href="https://github.com/ZrrSkywalker/MonoDETR">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/DfM.png" width="180" height="110" alt="dfm" align="left"/>
+                            </dt>
+                            <dt>Monocular 3D Object Detection with Depth from Motion</dt>
+                            <dd>
+                                <strong>Tai Wang</strong>
+                                , Jiangmiao Pang, Dahua Lin
+                            </dd>
+                            <dd>
+                                European Conference on Computer Vision (<strong>ECCV</strong>
+                                ) 2022, <strong>Oral</strong>
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2207.12988">[Paper]</a>
+                                <a href="https://github.com/Tai-Wang/Depth-from-Motion">[Code]</a>
+                                <a href="https://zhuanlan.zhihu.com/p/552559901">[Zhihu]</a>
+                                <a href="https://drive.google.com/file/d/1411QF3F2d3u_5hfQqRRo7EoNIc2ULVxM/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/MV-FCOS3D.png" width="180" height="110" alt="mv-fcos3d" align="left"/>
+                            </dt>
+                            <dt>
+                                MV-FCOS3D++: Multi-View Camera-Only 4D Object Detection <br/>with Pretrained Monocular Backbones
+                            </dt>
+                            <dd>
+                                <strong>Tai Wang</strong>
+                                , Qing Lian, Chenming Zhu, Xinge Zhu, Wenwei Zhang
+                            </dd>
+                            <dd>
+                                Runner-up solution in the Waymo Camera-Only 3D detection challenge, <strong>CVPR</strong>
+                                2022
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2207.12716">[Preliminary Tech Report]</a>
+                                <a href="https://github.com/Tai-Wang/Depth-from-Motion">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1KEp4zzysCpS94_IzfnNXswt2x6hLSdva/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/PGD.png" width="180" height="110" alt="pgd" align="left"/>
+                            </dt>
+                            <dt>Probabilistic and Geometric Depth: Detecting Objects in Perspective</dt>
+                            <dd>
+                                <strong>Tai Wang</strong>
+                                , Xinge Zhu, Jiangmiao Pang, Dahua Lin
+                            </dd>
+                            <dd>
+                                Conference on Robot Learning (<strong>CoRL</strong>
+                                ) 2021
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2107.14160">[Paper]</a>
+                                <a href="https://github.com/open-mmlab/mmdetection3d">[Code]</a>
+                                <a href="https://openreview.net/attachment?id=bEito8UUUmf&amp;name=poster">[Poster]</a>
+                                <a href="https://drive.google.com/file/d/1lDnsLl0vm6gi4_XhKj-4IuEnE6LwuQRe/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/FCOS3D.png" width="180" height="110" alt="fcos3d" align="left"/>
+                            </dt>
+                            <dt>FCOS3D: Fully Convolutional One-Stage Monocular 3D Object Detection</dt>
+                            <dd>
+                                <strong>Tai Wang</strong>
+                                , Xinge Zhu, Jiangmiao Pang, Dahua Lin
+                            </dd>
+                            <dd>
+                                ICCV Workshop on 3D Object Detection from Images (<strong>ICCVW</strong>
+                                ) 2021, <strong>Best Paper Award</strong>
+                            </dd>
+                            <dd>
+                                1st place solution of vision-only methods in the nuScenes 3D detection challenge, <strong>NeurIPS</strong>
+                                2020
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2104.10956">[Paper]</a>
+                                <a href="https://github.com/open-mmlab/mmdetection3d">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1mcOxavQetj0CCdP__5XQK_RZB6-VT32u/view?usp=sharing">[Slides]</a>
+                                <a href="https://zhuanlan.zhihu.com/p/400191167">[Zhihu]</a>
+                                <a href="https://drive.google.com/file/d/13Qv40nhOUZKenpK5FEbc0fw-IsLnEW2r/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/SIDE.png" width="180" height="110" alt="side" align="left"/>
+                            </dt>
+                            <dt>
+                                SIDE: Center-Based Stereo 3D Detector with Structure-Aware <br/>Instance Depth Estimation
+                            </dt>
+                            <dd>
+                                Xidong Peng, Xinge Zhu, <strong>Tai Wang</strong>
+                                , Yuexin Ma
+                            </dd>
+                            <dd>
+                                IEEE Winter Conference on Applications of Computer Vision (<strong>WACV</strong>
+                                ) 2022
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2108.09663">[Paper]</a>
+                                <a href="https://github.com/linmo2333/SIDE">[Code]</a>
+                                <a href="https://drive.google.com/file/d/15FIrYx6HfrX6ijghlbdSk6itN1BQ-wgj/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                        </dl>
+                        <hr/>
+                        <dl>
+                            <dt>
+                                <strong>Voxel Representation Learning in LiDAR-Based Perception</strong>
+                                <br/>
+                            </dt>
+                            <dt>
+                                <img src="../images/p3former.png" width="180" height="110" alt="p3former" align="left"/>
+                            </dt>
+                            <dt>Position-Guided Point Cloud Panoptic Segmentation Transformer</dt>
+                            <dd>
+                                Zeqi Xiao*, Wenwei Zhang*, <strong>Tai Wang*</strong>
+                                , Chen Change Loy, Dahua Lin, Jiangmiao Pang
+                            </dd>
+                            <dd>Arxiv preprint</dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2303.13509">[Paper]</a>
+                                <a href="https://github.com/SmartBot-PJLab/P3Former">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1vnWmAdvkGZzVmiBsS_jqA9M0jl6n1eEG/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/MV-JAR.png" width="180" height="110" alt="mvjar" align="left"/>
+                            </dt>
+                            <dt>
+                                MV-JAR: Masked Voxel Jigsaw and Reconstruction for LiDAR-Based <br/>Self-Supervised Pre-Training
+                            </dt>
+                            <dd>
+                                Runsen Xu, <strong>Tai Wang</strong>
+                                , Wenwei Zhang, Runjian Chen, Jinkun Cao, Jiangmiao Pang, Dahua Lin
+                            </dd>
+                            <dd>
+                                IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>
+                                ) 2023
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2303.13510">[Paper]</a>
+                                <a href="https://github.com/SmartBot-PJLab/MV-JAR">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1g8krJnOK1Jp_eOtXerggX_GNfETpEkvi/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/cylinder3d.png" width="180" height="110" alt="cylinder3d" align="left"/>
+                            </dt>
+                            <dt>
+                                Cylindrical and Asymmetrical 3D Convolution Networks for <br/>LiDAR Segmentation
+                            </dt>
+                            <dd>
+                                Xinge Zhu*, Hui Zhou*, <strong>Tai Wang</strong>
+                                , Fangzhou Hong, Yuexin Ma, Wei Li, Hongsheng Li, Dahua Lin
+                            </dd>
+                            <dd>
+                                IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>
+                                ) 2021, <strong>Oral</strong>
+                            </dd>
+                            <dd>
+                                IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</strong>
+                                ) 2021
+                            </dd>
+                            <dd>
+                                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhu_Cylindrical_and_Asymmetrical_3D_Convolution_Networks_for_LiDAR_Segmentation_CVPR_2021_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/xinge008/Cylinder3D">[Code]</a>
+                                <a href="https://ieeexplore.ieee.org/document/9495168">[TPAMI version]</a>
+                                <a href="https://drive.google.com/file/d/1AiNyWAdGG4vcljsuzByeivjcLG8BtK_o/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/reconfig.png" width="180" height="110" alt="reconfig" align="left"/>
+                            </dt>
+                            <dt>
+                                Reconfigurable Voxels: A New Representation for LiDAR-Based <br/>Point Clouds
+                            </dt>
+                            <dd>
+                                <strong>Tai Wang</strong>
+                                , Xinge Zhu, Dahua Lin
+                            </dd>
+                            <dd>
+                                Conference on Robot Learning (<strong>CoRL</strong>
+                                ) 2020
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2004.02724">[Paper]</a>
+                                <a href="https://www.youtube.com/watch?v=qooEVl8XF9o&amp;t=4s">[Spotlight Talk]</a>
+                                <a href="https://drive.google.com/file/d/1VcsRhtlcbUiFjmqYNu1ertL6REq5RlBT/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/SSN.png" width="180" height="110" alt="ssn" align="left"/>
+                            </dt>
+                            <dt>
+                                SSN: Shape Signature Networks for Object Detection from <br/>Point Clouds
+                            </dt>
+                            <dd>
+                                Xinge Zhu, Yuexin Ma, <strong>Tai Wang</strong>
+                                , Yan Xu, Jianping Shi, Dahua Lin,
+                            </dd>
+                            <dd>
+                                European Conference on Computeer Vision (<strong>ECCV</strong>
+                                ) 2020
+                            </dd>
+                            <dd>
+                                <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123700579.pdf">[Paper]</a>
+                                <a href="https://github.com/xinge008/SSN">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1ABoEED_6JNGf8cvAiCIn_F3AcqwlOdnp/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                        </dl>
+                        <hr/>
+                        <dl>
+                            <dt>
+                                <strong>Efficient Annotation of LiDAR Point Clouds</strong>
+                                <br/>
+                            </dt>
+                            <dt>
+                                <img src="../images/flava.gif" width="180" height="110" alt="flava" align="left"/>
+                            </dt>
+                            <dt>
+                                FLAVA: Find, Localize, Adjust and Verify to Annotate LiDAR-based <br/>Point Clouds
+                            </dt>
+                            <dd>
+                                <strong>Tai Wang</strong>
+                                , Conghui He, Zhe Wang, Jianping Shi, Dahua Lin
+                            </dd>
+                            <dd>
+                                ACM Symposium on User Interface Software and Technology (<strong>UIST</strong>
+                                ) 2020, Poster
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2011.10174">[Full Tech Report]</a>
+                                <a href="https://uist.acm.org/uist2020/data/posters/1024.pdf">[Poster]</a>
+                                <a href="https://dl.acm.org/doi/10.1145/3379350.3416176">[Poster Summary]</a>
+                                <a href="https://www.youtube.com/watch?v=hri54dzPxnI">[Demo]</a>
+                                <a href="https://drive.google.com/file/d/1lA8zX8cEEFT43CXDkVcsEdvpHBpg7cBY/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                        </dl>
+                        <hr/>
+                        <dl>
+                            <dt>
+                                <strong>Other 3D Vision Research</strong>
+                                <br/>
+                            </dt>
+                            <dt>
+                                <img src="../images/DCD.png" width="180" height="110" alt="dcd" align="left"/>
+                            </dt>
+                            <dt>
+                                Density-aware Chamfer Distance as a Comprehensive Metric for <br/>Point Cloud Completion
+                            </dt>
+                            <dd>
+                                Tong Wu, Liang Pan, Junzhe Zhang, <strong>Tai Wang</strong>
+                                , Ziwei Liu, Dahua Lin
+                            </dd>
+                            <dd>
+                                Advances in Neural Information Processing Systems (<strong>NeurIPS</strong>
+                                ), 2021
+                            </dd>
+                            <dd>
+                                <a href="https://arxiv.org/abs/2111.12702">[Paper]</a>
+                                <a href="https://github.com/wutong16/Density_aware_Chamfer_Distance">[Code]</a>
+                                <a href="https://drive.google.com/file/d/1UToOE543--hzBF-FEnqj_xUwdPUdpNfZ/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                        </dl>
+                        <h2 id="research-projects">Research Projects</h2>
+                        <dl>
+                            <dt>
+                                <img src="../images/mmdet3d.gif" width="110" height="110" alt="mmdet3d" align="left"/>
+                            </dt>
+                            <dt>MMDetection3D: The Next-Generation Platform for General 3D Detection</dt>
+                            <dd>A versatile, open-source 3D object detection toolbox based on PyTorch</dd>
+                            <dd>MMDetection3D Contributors</dd>
+                            <dd>May 2020 – Now</dd>
+                            <dd>
+                                <a href="https://github.com/open-mmlab/mmdetection3d">[Code]</a>
+                                <a href="https://mmdetection3d.readthedocs.io/en/latest/">[Doc]</a>
+                                <a href="https://drive.google.com/file/d/1X24zBeM0dwol10CcKSN_SkIolhopsA85/view?usp=sharing">[Bibtex]</a>
+                            </dd>
+                            <dt>
+                                <img src="../images/s2mesh.png" width="110" height="110" alt="s2mesh" align="left"/>
+                            </dt>
+                            <dt>Spherical Convolutional Networks for 3D Mesh Processing</dt>
+                            <dd>New approaches to generating 3D meshes from scratch with S2 parametrization &amp;extended spherical CNNs</dd>
+                            <dd>
+                                <strong>Tai Wang</strong>
+                                , Weiwei Zhou and Zicheng Liao
+                            </dd>
+                            <dd>Under revision and further development</dd>
+                            <dd>Mar 2018 – Nov 2018</dd>
+                        </dl>
+                        <h2 id="experience">Experience</h2>
+                        <dl>
+                            <dt>
+                                <img src="../images/shlab.jpg" width="80" height="85" alt="shlab" align="left"/>
+                            </dt>
+                            <dt>Visiting Scholar, Shanghai AI Laboratory</dt>
+                            <dd>July 2020 - Now.  Advisor: Jiangmiao Pang, Kai Chen</dd>
+                            <dd>Focus: The next-generation platform for general 3D perception</dd>
+                            <dt>
+                                <img src="../images/sensetime.jpg" width="80" height="90" alt="sensetime" align="left"/>
+                            </dt>
+                            <dt>Adjunct Researcher, Sensetime</dt>
+                            <dd>Nov. 2019 - June 2020.  Advisor: Conghui He, Zhe Wang, Jianping Shi</dd>
+                            <dd>Focus: Efficient annotation of LiDAR point clouds, development of LiDAR perception system</dd>
+                            <dt>
+                                <img src="../images/cuhk.png" width="80" height="90" alt="cuhk" align="left"/>
+                            </dt>
+                            <dt>Junior Research Assistant, The Chinese University of Hong Kong (CUHK)</dt>
+                            <dd>Feb. 2019 - May 2019.  Advisor: Dahua Lin</dd>
+                            <dd>Focus: Real-time 3D object detection in autonomous driving</dd>
+                            <dt>
+                                <img src="../images/AZFT.png" width="80" height="90" alt="AZFT" align="left"/>
+                            </dt>
+                            <dt>Research Intern, Alibaba-ZJU Joint Institute of Frontier Technologies (AZFT)</dt>
+                            <dd>Dec. 2017 - June 2019.  Advisor: Zicheng Liao, Gang Wang. I also worked with Dr. Lechao Cheng.</dd>
+                            <dd>Focus: Joint analysis of 2D Images and 3D Shapes with machine learning approaches</dd>
+                        </dl>
+                        <h2 id="selected-awards">Selected Awards</h2>
+                        <ul>
+                            <li>
+                                Runner-up of <a href="https://cvpr2022.wad.vision/">Waymo Camera-Only 3D Detection Challenge</a>
+                                , CVPR 2022
+                            </li>
+                            <li>
+                                Best Paper Award of <a href="https://sites.google.com/unitn.it/3dodi/home">Workshop on 3D Object Detection from Images</a>
+                                , ICCV 2021
+                            </li>
+                            <li>
+                                1st place of vision-only track and best PKL award of overall track, <a href="https://www.nuscenes.org/object-detection?externalData=all&amp;mapData=all&amp;modalities=Any">NuScenes 3D Detection Challenge</a>
+                                , NeurIPS 2020
+                            </li>
+                            <li>
+                                Runner-up of <a href="https://www.nuscenes.org/lidar-segmentation?externalData=all&amp;mapData=all&amp;modalities=Any">NuScenes LiDAR Segmentation Challenge</a>
+                                , NeurIPS 2020
+                            </li>
+                            <li>
+                                Gold Medal of Kaggle Competition (Top 1% of <a href="https://www.nuscenes.org/lidar-segmentation?externalData=all&amp;mapData=all&amp;modalities=Any">Lyft 3D Detection Challenge</a>
+                                ), NeurIPS 2019
+                            </li>
+                            <li>Hong Kong PhD Fellowship (HKPFS), 2019</li>
+                            <li>Chu Kochen Scholarship (Highest scholarship at Zhejiang University), 2018</li>
+                            <li>Top 10 Students of ZJU (Highest honor for 5 undergraduates/graduates), 2018</li>
+                            <li>National Scholarship (1.5%), 2017-2018</li>
+                            <li>First Prize in Physics Competition for Undergraduate, 2017</li>
+                        </ul>
+                        <h2 id="teaching">Teaching</h2>
+                        <ul>
+                            <li>Computer Vision (Undergraduate Course), Winter 2018 @ ZJU</li>
+                            <li>IERG2080: Introduction to Systems Programming, Fall 2020 @ CUHK</li>
+                            <li>IERG2470B/ESTR2308: Probability Models and Applications (Elite Students), Spring 2021 @ CUHK</li>
+                        </ul>
+                        <h2 id="miscellaneous">Miscellaneous</h2>
+                        <p>
+                            <strong>Academic Services</strong>
+                            <br/>I served as a reviewer for CVPR, ICCV, ECCV, CoRL, NeurIPS, ICLR, ICML, WACV, IJCV, TVCG.
+                        </p>
+                        <p>
+                            <strong>Hobbies</strong>
+                            <br/>
+                            Love: 🏀Basketball (I am a big fan of <a href="https://en.wikipedia.org/wiki/Stephen_Curry">Stephen Curry</a>
+                            and <a href="https://en.wikipedia.org/wiki/Tracy_McGrady">Tracy McGrady</a>
+                            ), 🎵music/🎤singing and good at 🖌️Chinese calligraphy (learned from <a href="https://baike.baidu.com/item/%E9%A9%AC%E8%89%AF%E8%BE%B0/5438872">MA Liangchen</a>
+                            and <a href="https://baike.baidu.com/item/%E9%A9%AC%E5%96%84%E5%8F%8C/5954206">MA Shanshuang</a>
+                            ).
+                        </p>
+                    </section>
+                    <footer class="page__meta"></footer>
+                </div>
+            </article>
+        </div>
+        <div class="page__footer">
+            <footer>
+                <!-- start custom footer snippets -->
+                <a href="/sitemap/">Sitemap</a>
+                <!-- end custom footer snippets -->
+                <div class="page__footer-follow">
+                    <ul class="social-icons">
+                        <li>
+                            <strong>Follow:</strong>
+                        </li>
+                        <li>
+                            <a href="http://github.com/Tai-Wang">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tai-wang.github.io/feed.xml">
+                                <i class="fa fa-fw fa-rss-square" aria-hidden="true"></i>
+                                Feed
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page__footer-copyright">
+                    &copy;2023 Tai Wang. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>
+                    &amp;<a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>
+                    , a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>
+                    .
+                </div>
+            </footer>
+        </div>
+        <script src="https://tai-wang.github.io/assets/js/main.min.js"></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }
+                ,
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            }
+            )(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', '', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
+
