@@ -59,6 +59,48 @@
              MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); 
         </script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        <style>
+            .publication {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 1.2em;
+                clear: both;
+            }
+            .pub-img {
+                flex-shrink: 0;
+                width: 180px;
+                margin-right: 1em;
+            }
+            .pub-img img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 4px;
+            }
+            .pub-text {
+                flex: 1;
+                min-width: 0;
+            }
+            .pub-title {
+                font-weight: bold;
+                margin-bottom: 0.15em;
+            }
+            .pub-authors {
+                margin-bottom: 0.15em;
+            }
+            .pub-venue {
+                margin-bottom: 0.15em;
+            }
+            .pub-links {
+                margin-bottom: 0;
+            }
+            .pub-section-header {
+                font-weight: bold;
+                margin-top: 1em;
+                margin-bottom: 0.8em;
+                clear: both;
+            }
+        </style>
         <!-- end custom head snippets -->
     </head>
     <body>
@@ -84,7 +126,7 @@
             <div class="sidebar sticky">
                 <div itemscope itemtype="http://schema.org/Person">
                     <div class="author__avatar">
-                        <img src="images/me.jpg" class="author__avatar" alt="Zhaoyang Lyu 吕照阳">
+                        <img src="images/me-3.jpg" class="author__avatar" alt="Zhaoyang Lyu 吕照阳">
                     </div>
                     <div class="author__content">
                         <h3 class="author__name">Zhaoyang Lyu 吕照阳</h3>
@@ -140,10 +182,9 @@
                     </header>
                     <section class="page__content" itemprop="text">
                         <p>
-                            I am a researcher with Shanghai AI Laboratory, working in a research group on <a href="https://idc-sh.github.io/#/">Content Generation and Digitization</a>. I received my Ph.D. (2018-2022) from Multimedia Laboratory (<a href="http://mmlab.ie.cuhk.edu.hk/">MMLab</a>) at CUHK, advised by Prof.Dahua Lin. I obtained my Bachelor's Degree (2014-2018) at Xi'an Jiaotong University.
-                            <br/>
-                            My current research focuses on 3D content generation, including 3D object and scene generation.
-                            I am looking for highly motivated interns in 3D generative models at <a href="https://www.shlab.org.cn">Shanghai AI Laboratory</a>. Drop me an email (lvzhaoyang@pjlab.org.cn) if you are interested.
+                            I am a researcher with Shanghai AI Laboratory, working at the Physical Intelligence Center. I received my Ph.D. (2018-2022) from Multimedia Laboratory (<a href="http://mmlab.ie.cuhk.edu.hk/">MMLab</a>) at CUHK, advised by Prof.Dahua Lin. I obtained my Bachelor's Degree (2014-2018) at Xi'an Jiaotong University.
+                            My research interests include 3D content generation and reconstruction, and embodied AI.
+                            I am looking for highly motivated interns in 3D generative models and embodied AI at <a href="https://www.shlab.org.cn">Shanghai AI Laboratory</a>. Drop me an email (lvzhaoyang@pjlab.org.cn) if you are interested.
                         </p>
                         
                         <h2 id="education">Education</h2>
@@ -162,248 +203,361 @@
                             <dd> &nbsp &nbsp B.S. in Physics (Experimental Class)</dd>
                         </dl>
                         <h2 id="publications">Publications</h2>
-                        <dl>
-                            <dt>
-                                <strong>3D Content Generation</strong>
-                                <br/>
-                            </dt>
 
-                            <dt>
-                                <img src="images/paper_arxiv2024_getmesh.png" width="175" height="140" alt="getmesh" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp GetMesh: A Controllable Model for High-quality Mesh <br/> &nbsp &nbsp Generation and Manipulation
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp <strong>Zhaoyang Lyu</strong>, Ben Fei, Jinyi Wang, Xudong Xu, Ya Zhang, Weidong Yang, Bo Dai
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp arXiv preprint
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2403.11990">[Paper]</a>
-                                <a href="https://github.com/ZhaoyangLyu/GetMesh">[Code]</a>
-                                <a href="https://getmesh.github.io/assets/bib.txt">[Bibtex]</a>
-                            </dd>
-                            
-                            <dt>
-                                <img src="images/paper_cvpr2023_slide.png" width="180" height="110" alt="slide" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp SLIDE: Controllable Mesh Generation Through Sparse Latent <br/> &nbsp &nbsp Point Diffusion Models
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp <strong>Zhaoyang Lyu</strong>, Jinyi Wang, Yuwei An, Ya Zhang, Dahua Lin, Bo Dai
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>
-                                ) 2023
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2303.07938">[Paper]</a>
-                                <a href="https://github.com/SLIDE-3D/SLIDE">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:5VyxJ5Yfp90J:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivOLrpk:AFWwaeYAAAAAZW6NtplK8pv3YiAS_8dasj-p4aE&scisig=AFWwaeYAAAAAZW6Nts8d6F9UVaWNDsK7TsaQv5o&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="pub-section-header">3D Object Generation</div>
 
-                            <dt>
-                                <img src="images/paper_iclr2022_pdr.png" width="180" height="110" alt="pdr" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp A Conditional Point Diffusion-Refinement Paradigm for 3D <br/> &nbsp &nbsp Point Cloud Completion
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp <strong>Zhaoyang Lyu</strong>, Zhifeng Kong, Xudong Xu, Liang Pan, Dahua Lin
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp International Conference on Learning Representations (<strong>ICLR</strong>
-                                ) 2022
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2112.03530">[Paper]</a>
-                                <a href="https://github.com/ZhaoyangLyu/Point_Diffusion_Refinement">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:aUKD6FNT2zoJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSELiiwPPdTUo:AFWwaeYAAAAAZW7bVUpivING1LMlUl1w4e61Cnw&scisig=AFWwaeYAAAAAZW7bVSLMxkj_c3MV-espkdT1nss&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2024_getmesh.png" width="180" alt="getmesh"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">GetMesh: A Controllable Model for High-quality Mesh Generation and Manipulation</div>
+                                <div class="pub-authors"><strong>Zhaoyang Lyu</strong>, Ben Fei, Jinyi Wang, Xudong Xu, Ya Zhang, Weidong Yang, Bo Dai</div>
+                                <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</strong>) 2025</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2403.11990">[Paper]</a>
+                                    <a href="https://github.com/ZhaoyangLyu/GetMesh">[Code]</a>
+                                    <a href="https://getmesh.github.io/assets/bib.txt">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_iclr2023_matlaber.png" width="180" height="110" alt="matlaber" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp MATLABER: Material-Aware Text-to-3D via LAtent BRDF auto-EncodeR
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp Xudong Xu, <strong>Zhaoyang Lyu</strong>, Xingang Pan, Bo Dai
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp arXiv preprint
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2308.09278">[Paper]</a>
-                                <a href="https://github.com/SheldonTsui/Matlaber">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:Qi5tms461wcJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivPbksQ:AFWwaeYAAAAAZW7disR99W8cF6j3vTbj_EKUpCE&scisig=AFWwaeYAAAAAZW7diuOn5ked1An2Ge9_G6dlulU&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_cvpr2023_slide.png" width="180" alt="slide"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">SLIDE: Controllable Mesh Generation Through Sparse Latent Point Diffusion Models</div>
+                                <div class="pub-authors"><strong>Zhaoyang Lyu</strong>, Jinyi Wang, Yuwei An, Ya Zhang, Dahua Lin, Bo Dai</div>
+                                <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>) 2023</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2303.07938">[Paper]</a>
+                                    <a href="https://github.com/SLIDE-3D/SLIDE">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:5VyxJ5Yfp90J:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivOLrpk:AFWwaeYAAAAAZW6NtplK8pv3YiAS_8dasj-p4aE&scisig=AFWwaeYAAAAAZW6Nts8d6F9UVaWNDsK7TsaQv5o&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <strong>Diffusion Model</strong>
-                                <br/>
-                            </dt>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_iclr2022_pdr.png" width="180" alt="pdr"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">A Conditional Point Diffusion-Refinement Paradigm for 3D Point Cloud Completion</div>
+                                <div class="pub-authors"><strong>Zhaoyang Lyu</strong>, Zhifeng Kong, Xudong Xu, Liang Pan, Dahua Lin</div>
+                                <div class="pub-venue">International Conference on Learning Representations (<strong>ICLR</strong>) 2022</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2112.03530">[Paper]</a>
+                                    <a href="https://github.com/ZhaoyangLyu/Point_Diffusion_Refinement">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:aUKD6FNT2zoJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSELiiwPPdTUo:AFWwaeYAAAAAZW7bVUpivING1LMlUl1w4e61Cnw&scisig=AFWwaeYAAAAAZW7bVSLMxkj_c3MV-espkdT1nss&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_arxiv2022_esddpm.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp Accelerating Diffusion Models via Early Stop of the Diffusion Process
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp <strong>Zhaoyang Lyu</strong>, Xudong Xu, Ceyuan Yang, Dahua Lin, Bo Dai
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp arXiv preprint
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2205.12524">[Paper]</a>
-                                <a href="https://github.com/ZhaoyangLyu/Early_Stopped_DDPM">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:rp62aeyJqOAJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLaHuo:AFWwaeYAAAAAZW_cBuocZ9G9FdKZnvV5Vxaf5uU&scisig=AFWwaeYAAAAAZW_cBkuh-jNuZa6XACdz1qAtHHA&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2025_infinitemobility.png" width="180" alt="infinitemobility"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation</div>
+                                <div class="pub-authors">Xinyu Lian, Zichao Yu, Ruiming Liang, Yitong Wang, Li Ray Luo, Kaixu Chen, Yuanzhen Zhou, Qihong Tang, Xudong Xu, <strong>Zhaoyang Lyu</strong> (<strong>Corresponding Author</strong>), Bo Dai, Jiangmiao Pang</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2503.13424">[Paper]</a>
+                                    <a href="https://github.com/InternRobotics/Infinite-Mobility">[Code]</a>
+                                    <a href="https://infinite-mobility.github.io/">[Project]</a>
+                                    <a href="https://arxiv.org/bibtex/2503.13424">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_cvpr2023_gdp.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp Generative Diffusion Prior for Unified Image Restoration and Enhancement
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp Ben Fei, <strong>Zhaoyang Lyu</strong> (<strong>Equal Contribution</strong>), Liang Pan, Junzhe Zhang, Weidong Yang, Tianyue Luo, <br/> &nbsp &nbsp Bo Zhang, Bo Dai
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>
-                                ) 2023
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2304.01247">[Paper]</a>
-                                <a href="https://github.com/Fayeben/GenerativeDiffusionPrior">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:U0dGUi_bDfIJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLqBrA:AFWwaeYAAAAAZW_sHrAmRFip5gffdQBulhP8_xg&scisig=AFWwaeYAAAAAZW_sHvEWNF4qC8CfXVBwLN2sZZ4&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_neurips2025_meshcoder.jpg" width="180" alt="meshcoder"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds</div>
+                                <div class="pub-authors">Bingquan Dai, Li Ray Luo, Qihong Tang, Jie Wang, Xinyu Lian, Hao Xu, Minghan Qin, Xudong Xu, Bo Dai, Haoqian Wang, <strong>Zhaoyang Lyu</strong> (<strong>Corresponding Author</strong>), Jiangmiao Pang</div>
+                                <div class="pub-venue">Neural Information Processing Systems (<strong>NeurIPS</strong>) 2025</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2508.14879">[Paper]</a>
+                                    <a href="https://github.com/InternRobotics/MeshCoder">[Code]</a>
+                                    <a href="https://daibingquan.github.io/MeshCoder">[Project]</a>
+                                    <a href="bibs/meshcoder_neurips2025.bib">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_arxiv2023_diffbir.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp DiffBIR: Towards Blind Image Restoration with Generative Diffusion Prior
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp Xinqi Lin, Jingwen He, Ziyan Chen, <strong>Zhaoyang Lyu</strong>, Ben Fei, Bo Dai, Wanli Ouyang, Yu Qiao, Chao Dong
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp arXiv preprint
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2308.15070">[Paper]</a>
-                                <a href="https://github.com/XPixelGroup/DiffBIR">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:Z9Dr2UUhFNQJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLoYxY:AFWwaeYAAAAAZW_uexYAx0tsb9lxJdkhrFs-IxE&scisig=AFWwaeYAAAAAZW_ue6Bh4NgaS2vgaEu945i4w6g&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2026_pnpu3d.jpg" width="180" alt="pnpu3d"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">PnP-U3D: Plug-and-Play 3D Framework Bridging Autoregression and Diffusion for Unified Understanding and Generation</div>
+                                <div class="pub-authors">Yongwei Chen, Tianyi Wei, Yushi Lan, <strong>Zhaoyang Lyu</strong>, Shangchen Zhou, Xudong Xu, Xingang Pan</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2602.03533">[Paper]</a>
+                                    <a href="https://cyw-3d.github.io/PnP-U3D/">[Project]</a>
+                                    <a href="https://arxiv.org/bibtex/2602.03533">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_iclr2025_gaussiananything.jpg" width="180" alt="gaussiananything"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">GaussianAnything: Interactive Point Cloud Flow Matching for 3D Generation</div>
+                                <div class="pub-authors">Yushi Lan, Shangchen Zhou, <strong>Zhaoyang Lyu</strong>, Fangzhou Hong, Shuai Yang, Bo Dai, Xingang Pan, Chen Change Loy</div>
+                                <div class="pub-venue">International Conference on Learning Representations (<strong>ICLR</strong>) 2025</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2411.08033">[Paper]</a>
+                                    <a href="https://github.com/NIRVANALAN/GaussianAnything">[Code]</a>
+                                    <a href="https://nirvanalan.github.io/projects/GA/">[Project]</a>
+                                    <a href="bibs/gaussiananything_iclr2025.bib">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_arxiv2023_point_diff_pretrain.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp Point Cloud Pre-training with Diffusion Models
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp  Xiao Zheng, Xiaoshui Huang, Guofeng Mei, Yuenan Hou, <strong>Zhaoyang Lyu</strong>, Bo Dai, <br/> &nbsp &nbsp Wanli Ouyang, Yongshun Gong
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>
-                                ) 2024
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2311.14960">[Paper]</a>
-                                <!-- <a href="https://github.com/XPixelGroup/DiffBIR">[Code]</a> -->
-                                [Code (Coming Soon)]
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:45a0SNBbrNkJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivL3Ad4:AFWwaeYAAAAAZW_xGd7F5P_W-vIpfD6DLPjkyOc&scisig=AFWwaeYAAAAAZW_xGdPXKL9IT8vfqyFZdOY2cI8&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_tpami2025_ln3diffpp.jpg" width="180" alt="ln3diffpp"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">LN3Diff++: Scalable Latent Neural Fields Diffusion for Speedy 3D Generation</div>
+                                <div class="pub-authors">Yushi Lan, Fangzhou Hong, Shangchen Zhou, Shuai Yang, Xuyi Meng, Yongwei Chen, <strong>Zhaoyang Lyu</strong>, Bo Dai, Xingang Pan, Chen Change Loy</div>
+                                <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</strong>) 2025</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2403.12019">[Paper]</a>
+                                    <a href="https://github.com/NIRVANALAN/LN3Diff">[Code]</a>
+                                    <a href="https://nirvanalan.github.io/projects/ln3diff/">[Project]</a>
+                                    <a href="bibs/ln3diffpp_tpami2025.bib">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2023_matlaber.png" width="180" alt="matlaber"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">MATLABER: Material-Aware Text-to-3D via LAtent BRDF auto-EncodeR</div>
+                                <div class="pub-authors">Xudong Xu, <strong>Zhaoyang Lyu</strong>, Xingang Pan, Bo Dai</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2308.09278">[Paper]</a>
+                                    <a href="https://github.com/SheldonTsui/Matlaber">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:Qi5tms461wcJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivPbksQ:AFWwaeYAAAAAZW7disR99W8cF6j3vTbj_EKUpCE&scisig=AFWwaeYAAAAAZW7diuOn5ked1An2Ge9_G6dlulU&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <strong>Neural Network Robustness</strong>
-                                <br/>
-                            </dt>
+                        <div class="pub-section-header">3D Scene Generation &amp; Reconstruction</div>
 
-                            <dt>
-                                <img src="images/paper_icml2019_popqorn.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp POPQORN: Quantifying Robustness of Recurrent Neural Networks
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp Ching-Yun Ko, <strong>Zhaoyang Lyu</strong> (<strong>Equal Contribution</strong>), Lily Weng, Luca Daniel, Ngai Wong, Dahua Lin
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp International Conference on Machine Learning (<strong>ICML</strong>
-                                ) 2019
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/1905.07387">[Paper]</a>
-                                <a href="https://github.com/ZhaoyangLyu/POPQORN">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:BJWo6ndW1SgJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSELiiwPPjuY0:AFWwaeYAAAAAZW7loY1fst2WeHf1ph7-38ZJEIU&scisig=AFWwaeYAAAAAZW7loYyG08YyE91aOIFeXJGEkWA&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_icml2026_stable.png" width="180" alt="stable"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">STABLE: Simulation-Ready Tabletop Layout Generation via a Semantics-Physics Dual System</div>
+                                <div class="pub-authors">Zhen Luo, Yixuan Yang, Xudong Xu, Jinkun Hao, <strong>Zhaoyang Lyu</strong>, Feng Zheng, Jiangmiao Pang, Yanwei Fu</div>
+                                <div class="pub-venue">International Conference on Machine Learning (<strong>ICML</strong>) 2026</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2605.16137">[Paper]</a>
+                                    <a href="bibs/stable_icml2026.bib">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_aaai2020_frown.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp Fastened CROWN: Tightened Neural Network Robustness Certificates
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp <strong>Zhaoyang Lyu</strong>, Ching-Yun Ko, Zhifeng Kong, Ngai Wong, Dahua Lin, Luca Daniel
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>
-                                ) 2020
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/1912.00574">[Paper]</a>
-                                <a href="https://github.com/ZhaoyangLyu/FROWN">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:X1oDsS2vN5oJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivPuRlM:AFWwaeYAAAAAZW7oXlM3sKkxlnai0QBycrA9oV8&scisig=AFWwaeYAAAAAZW7oXq2w2WUpnX9vueQHNQVNbIM&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_iclr2026_stream3r.png" width="180" alt="stream3r"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">STream3R: Scalable Sequential 3D Reconstruction with Causal Transformer</div>
+                                <div class="pub-authors">Yushi Lan, Yihang Luo, Fangzhou Hong, Shangchen Zhou, Honghua Chen, <strong>Zhaoyang Lyu</strong>, Shuai Yang, Bo Dai, Chen Change Loy, Xingang Pan</div>
+                                <div class="pub-venue">International Conference on Learning Representations (<strong>ICLR</strong>) 2026</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2508.10893">[Paper]</a>
+                                    <a href="https://github.com/NIRVANALAN/STream3R">[Code]</a>
+                                    <a href="https://nirvanalan.github.io/projects/stream3r">[Project]</a>
+                                    <a href="bibs/stream3r_iclr2026.bib">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_cvpr2021_verify.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp Towards Evaluating and Training Verifiably Robust Neural Networks
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp <strong>Zhaoyang Lyu</strong>, Minghao Guo, Tong Wu, Guodong Xu, Kehuan Zhang, Dahua Lin
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>
-                                ) 2021
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2104.00447">[Paper]</a>
-                                <a href="https://github.com/ZhaoyangLyu/VerifiablyRobustNN">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:_XnrvG5lAm4J:scholar.google.com/&output=citation&scisdr=ClHXBVKSELiiwPPsVtg:AFWwaeYAAAAAZW7qTtiWGuFQlFZV_BhyCy37PA8&scisig=AFWwaeYAAAAAZW7qTuBLbMRxfZyoWmoXXH9bsqA&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2026_codeasroom.png" width="180" alt="codeasroom"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis</div>
+                                <div class="pub-authors">Yixuan Yang, Zhen Luo, Wanshui Gan, Jinkun Hao, Junru Lu, Jinghao Yan, <strong>Zhaoyang Lyu</strong>, Xudong Xu</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2605.18451">[Paper]</a>
+                                    <a href="https://github.com/YxuanAr/Code-as-Room">[Code]</a>
+                                    <a href="https://code-as-room.github.io/">[Project]</a>
+                                    <a href="https://arxiv.org/bibtex/2605.18451">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <dt>
-                                <img src="images/paper_arxiv2022_purify.png" width="170" height="110" alt="popqorn" align="left"/>
-                            </dt>
-                            <dt>
-                                &nbsp &nbsp Guided Diffusion Model for Adversarial Purification
-                            </dt>
-                            <dd>
-                                &nbsp &nbsp Jinyi Wang, <strong>Zhaoyang Lyu</strong> (<strong>Equal Contribution</strong>), Dahua Lin, Bo Dai, Hongfei Fu
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp arXiv preprint
-                            </dd>
-                            <dd>
-                                &nbsp &nbsp <a href="https://arxiv.org/abs/2205.14969">[Paper]</a>
-                                <a href="https://github.com/JinyiW/GuidedDiffusionPur">[Code]</a>
-                                <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:yPYiA5DhvEQJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLS53M:AFWwaeYAAAAAZW_U_3M7WaXJh9wTbcE1GPqg5tU&scisig=AFWwaeYAAAAAZW_U_yVagHH4ZVqz38fpjoaY5RM&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
-                            </dd>
-                        
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_neurips2025_mesatask.png" width="180" alt="mesatask"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial Reasoning</div>
+                                <div class="pub-authors">Jinkun Hao, Naifu Liang, Zhen Luo, Xudong Xu, Weipeng Zhong, Ran Yi, Yichen Jin, <strong>Zhaoyang Lyu</strong>, Feng Zheng, Lizhuang Ma, Jiangmiao Pang</div>
+                                <div class="pub-venue">Neural Information Processing Systems (<strong>NeurIPS</strong>) 2025 <strong>(Spotlight)</strong></div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2509.22281">[Paper]</a>
+                                    <a href="https://github.com/InternRobotics/MesaTask">[Code]</a>
+                                    <a href="https://mesatask.github.io/">[Project]</a>
+                                    <a href="bibs/mesatask_neurips2025.bib">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_neurips2025_internscenes.png" width="180" alt="internscenes"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">InternScenes: A Large-scale Simulatable Indoor Scene Dataset with Realistic Layouts</div>
+                                <div class="pub-authors">Weipeng Zhong, Peizhou Cao, Yichen Jin, Li Luo, Wenzhe Cai, Jingli Lin, Hanqing Wang, <strong>Zhaoyang Lyu</strong>, Tai Wang, Bo Dai, Xudong Xu, Jiangmiao Pang</div>
+                                <div class="pub-venue">Neural Information Processing Systems (<strong>NeurIPS</strong>) 2025</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2509.10813">[Paper]</a>
+                                    <a href="https://github.com/InternRobotics/InternScenes">[Code]</a>
+                                    <a href="https://marjordcpz.github.io/InternScenes.github.io">[Project]</a>
+                                    <a href="bibs/internscenes_neurips2025.bib">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-section-header">Embodied AI</div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2026_robovip.png" width="180" alt="robovip"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation</div>
+                                <div class="pub-authors">Boyang Wang, Haoran Zhang, Shujie Zhang, Jinkun Hao, Mingda Jia, Qi Lv, Yucheng Mao, <strong>Zhaoyang Lyu</strong>, Jia Zeng, Xudong Xu, Jiangmiao Pang</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2601.05241">[Paper]</a>
+                                    <a href="https://robovip.github.io/RoboVIP/">[Project]</a>
+                                    <a href="https://arxiv.org/bibtex/2601.05241">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2026_ebench.png" width="180" alt="ebench"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies</div>
+                                <div class="pub-authors">Ning Gao, Jinliang Zheng, Xing Gao, Haoxiang Ma, Hanqing Wang, Yukai Wang, Jiantong Chen, Zanxin Chen, Shujie Zhang, Mingda Jia, Xuekun Jiang, Zihou Zhu, Xinyu Li, Shuai Wang, Hao Li, Wenzhe Cai, Yuqiang Yang, Xudong Xu, <strong>Zhaoyang Lyu</strong>, Yao Mu, Tai Wang, Jiangmiao Pang, Jia Zeng, Weinan Zhang, Chunhua Shen</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2606.18239">[Paper]</a>
+                                    <a href="https://github.com/InternRobotics/EBench">[Code]</a>
+                                    <a href="https://internrobotics.github.io/EBench-doc/">[Project]</a>
+                                    <a href="https://arxiv.org/bibtex/2606.18239">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-section-header">Diffusion Model</div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_cvpr2023_gdp.png" width="180" alt="gdp"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Generative Diffusion Prior for Unified Image Restoration and Enhancement</div>
+                                <div class="pub-authors">Ben Fei, <strong>Zhaoyang Lyu</strong> (<strong>Equal Contribution</strong>), Liang Pan, Junzhe Zhang, Weidong Yang, Tianyue Luo, Bo Zhang, Bo Dai</div>
+                                <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>) 2023</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2304.01247">[Paper]</a>
+                                    <a href="https://github.com/Fayeben/GenerativeDiffusionPrior">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:U0dGUi_bDfIJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLqBrA:AFWwaeYAAAAAZW_sHrAmRFip5gffdQBulhP8_xg&scisig=AFWwaeYAAAAAZW_sHvEWNF4qC8CfXVBwLN2sZZ4&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2022_esddpm.png" width="180" alt="esddpm"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Accelerating Diffusion Models via Early Stop of the Diffusion Process</div>
+                                <div class="pub-authors"><strong>Zhaoyang Lyu</strong>, Xudong Xu, Ceyuan Yang, Dahua Lin, Bo Dai</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2205.12524">[Paper]</a>
+                                    <a href="https://github.com/ZhaoyangLyu/Early_Stopped_DDPM">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:rp62aeyJqOAJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLaHuo:AFWwaeYAAAAAZW_cBuocZ9G9FdKZnvV5Vxaf5uU&scisig=AFWwaeYAAAAAZW_cBkuh-jNuZa6XACdz1qAtHHA&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2023_diffbir.png" width="180" alt="diffbir"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">DiffBIR: Toward Blind Image Restoration with Generative Diffusion Prior</div>
+                                <div class="pub-authors">Xinqi Lin, Jingwen He, Ziyan Chen, <strong>Zhaoyang Lyu</strong>, Bo Dai, Fanghua Yu, Yu Qiao, Wanli Ouyang, Chao Dong</div>
+                                <div class="pub-venue">European Conference on Computer Vision (<strong>ECCV</strong>) 2024</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2308.15070">[Paper]</a>
+                                    <a href="https://github.com/XPixelGroup/DiffBIR">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:Z9Dr2UUhFNQJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLoYxY:AFWwaeYAAAAAZW_uexYAx0tsb9lxJdkhrFs-IxE&scisig=AFWwaeYAAAAAZW_ue6Bh4NgaS2vgaEu945i4w6g&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2023_point_diff_pretrain.png" width="180" alt="point_diff_pretrain"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Point Cloud Pre-training with Diffusion Models</div>
+                                <div class="pub-authors">Xiao Zheng, Xiaoshui Huang, Guofeng Mei, Yuenan Hou, <strong>Zhaoyang Lyu</strong>, Bo Dai, Wanli Ouyang, Yongshun Gong</div>
+                                <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>) 2024</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2311.14960">[Paper]</a>
+                                    <a href="https://github.com/zhengxiaozx/PointDif">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:45a0SNBbrNkJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivL3Ad4:AFWwaeYAAAAAZW_xGd7F5P_W-vIpfD6DLPjkyOc&scisig=AFWwaeYAAAAAZW_xGdPXKL9IT8vfqyFZdOY2cI8&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pub-section-header">Neural Network Robustness</div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_arxiv2022_purify.png" width="180" alt="purify"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Guided Diffusion Model for Adversarial Purification</div>
+                                <div class="pub-authors">Jinyi Wang, <strong>Zhaoyang Lyu</strong> (<strong>Equal Contribution</strong>), Dahua Lin, Bo Dai, Hongfei Fu</div>
+                                <div class="pub-venue">arXiv preprint</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2205.14969">[Paper]</a>
+                                    <a href="https://github.com/JinyiW/GuidedDiffusionPur">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:yPYiA5DhvEQJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivLS53M:AFWwaeYAAAAAZW_U_3M7WaXJh9wTbcE1GPqg5tU&scisig=AFWwaeYAAAAAZW_U_yVagHH4ZVqz38fpjoaY5RM&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_cvpr2021_verify.png" width="180" alt="verify"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Towards Evaluating and Training Verifiably Robust Neural Networks</div>
+                                <div class="pub-authors"><strong>Zhaoyang Lyu</strong>, Minghao Guo, Tong Wu, Guodong Xu, Kehuan Zhang, Dahua Lin</div>
+                                <div class="pub-venue">IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>) 2021 <strong>(Oral)</strong></div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/2104.00447">[Paper]</a>
+                                    <a href="https://github.com/ZhaoyangLyu/VerifiablyRobustNN">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:_XnrvG5lAm4J:scholar.google.com/&output=citation&scisdr=ClHXBVKSELiiwPPsVtg:AFWwaeYAAAAAZW7qTtiWGuFQlFZV_BhyCy37PA8&scisig=AFWwaeYAAAAAZW7qTuBLbMRxfZyoWmoXXH9bsqA&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_aaai2020_frown.png" width="180" alt="frown"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">Fastened CROWN: Tightened Neural Network Robustness Certificates</div>
+                                <div class="pub-authors"><strong>Zhaoyang Lyu</strong>, Ching-Yun Ko, Zhifeng Kong, Ngai Wong, Dahua Lin, Luca Daniel</div>
+                                <div class="pub-venue">AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>) 2020</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/1912.00574">[Paper]</a>
+                                    <a href="https://github.com/ZhaoyangLyu/FROWN">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:X1oDsS2vN5oJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSEL-qivPuRlM:AFWwaeYAAAAAZW7oXlM3sKkxlnai0QBycrA9oV8&scisig=AFWwaeYAAAAAZW7oXq2w2WUpnX9vueQHNQVNbIM&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication">
+                            <div class="pub-img"><img src="images/paper_icml2019_popqorn.png" width="180" alt="popqorn"></div>
+                            <div class="pub-text">
+                                <div class="pub-title">POPQORN: Quantifying Robustness of Recurrent Neural Networks</div>
+                                <div class="pub-authors">Ching-Yun Ko, <strong>Zhaoyang Lyu</strong> (<strong>Equal Contribution</strong>), Tsui-Wei Weng, Luca Daniel, Ngai Wong, Dahua Lin</div>
+                                <div class="pub-venue">International Conference on Machine Learning (<strong>ICML</strong>) 2019</div>
+                                <div class="pub-links">
+                                    <a href="https://arxiv.org/abs/1905.07387">[Paper]</a>
+                                    <a href="https://github.com/ZhaoyangLyu/POPQORN">[Code]</a>
+                                    <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:BJWo6ndW1SgJ:scholar.google.com/&output=citation&scisdr=ClHXBVKSELiiwPPjuY0:AFWwaeYAAAAAZW7loY1fst2WeHf1ph7-38ZJEIU&scisig=AFWwaeYAAAAAZW7loYyG08YyE91aOIFeXJGEkWA&scisf=4&ct=citation&cd=-1&hl=en">[Bibtex]</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </section>
                     <footer class="page__meta"></footer>
                 </div>
